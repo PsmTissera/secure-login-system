@@ -36,8 +36,9 @@
 </head>
 
 <body>
-// user dashboard with session handling
+
 <?php
+// user dashboard with session handling
 session_start();
 
 if (!isset($_SESSION['user'])) {
