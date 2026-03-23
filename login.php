@@ -59,8 +59,10 @@
 <div class="box">
 
 <h2>🔐 Secure Login</h2>
-// Step 2: authentication logic added
 <?php
+
+// user login with security features
+
 session_start();
 include "db.php";
 
