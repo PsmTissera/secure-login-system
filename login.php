@@ -81,7 +81,7 @@ if (isset($_POST['login'])) {
             $conn->query("INSERT INTO logs (username, ip, status) VALUES ('$username', '$ip', 'LOCKED')");
 
         } else {
-
+// Step 4: IP tracking using REMOTE_ADDR
             if (password_verify($password, $user['password'])) {
 
                 if ($user['last_ip'] && $user['last_ip'] != $ip) {
