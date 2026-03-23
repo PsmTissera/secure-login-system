@@ -1,3 +1,4 @@
+//  logout functionality using session destroy
 <?php
 session_start();
 session_unset();   // clear session
