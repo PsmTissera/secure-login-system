@@ -76,7 +76,7 @@ if (isset($_POST['login'])) {
     if ($user) {
 
         if ($user['failed_attempts'] >= 3) {
-
+// Step 3: brute force protection using failed_attempts
             echo "<p style='color:red;'>Account locked! Too many attempts.</p>";
             $conn->query("INSERT INTO logs (username, ip, status) VALUES ('$username', '$ip', 'LOCKED')");
 
