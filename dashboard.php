@@ -36,7 +36,7 @@
 </head>
 
 <body>
-
+// user dashboard with session handling
 <?php
 session_start();
 
