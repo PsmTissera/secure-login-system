@@ -57,8 +57,9 @@
 </head>
 
 <body>
-// admin dashboard for security monitoring
+
 <?php
+//user dashboard with session handling
 session_start();
 include "db.php";
 
